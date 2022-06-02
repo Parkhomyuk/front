@@ -1,0 +1,14 @@
+<form action="" [formGroup]="addAttendeeForm" (ngSubmit)="submit()">
+    <div>
+      <mat-form-field class="form-input" appearance="fill">
+        <mat-label>ID</mat-label>
+          <input matInput type="number" formControlName="id">
+        </mat-form-field>
+    </div>
+    
+      <mat-form-field class="form-input" appearance="fill"> 
+        <mat-label>Attendee</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Home</button>
+</form>
